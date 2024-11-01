@@ -1,16 +1,16 @@
 {
-    "version": "8.18.0",
+    "version": "8.19.2",
     "description": "A powerful, general purpose editor for plain text files.",
     "homepage": "https://www.textpad.com/",
     "license": "Proprietary",
     "architecture": {
         "64bit": {
-            "url": "https://www.textpad.com/file?path=v818/x64/txpeng8180-64.zip",
-            "hash": "a1d4710f91f21db6c152e061a8b6e4c018300eda52d8031ee0f6d8e2da841d02"
+            "url": "https://www.textpad.com/file?path=v819/x64/txpeng8192-64.zip",
+            "hash": "c07d8ef2114558ea8c55bc009315505cee002941727d76b6e178de3a1226579b"
         },
         "32bit": {
-            "url": "https://www.textpad.com/file?path=v818/win32/txpeng8180-32.zip",
-            "hash": "aef79f48624d6c15e9403680aac126d014a5ae11569263375b6f0e6eff0c437f"
+            "url": "https://www.textpad.com/file?path=v819/win32/txpeng8192-32.zip",
+            "hash": "b707f904813ae8b8ee83f7f7d416d26a39fd869fb26761f9d400a1fac1bc7e93"
         }
     },
     "installer": {

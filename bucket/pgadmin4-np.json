@@ -1,29 +1,33 @@
 {
-    "version": "8.3",
+    "version": "8.12",
     "homepage": "https://www.pgadmin.org/",
     "description": "PostgreSQL administration and development platform.",
     "license": "PostgreSQL",
     "architecture": {
         "64bit": {
-            "url": "https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v8.3/windows/pgadmin4-8.3-x64.exe",
-            "hash": "67efa01319606dbfbfe4dfc69eb3c419445d9255cbaa2b8ffb43d892604c42f2"
+            "url": "https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v8.12/windows/pgadmin4-8.12-x64.exe",
+            "hash": "2b28b9a70b1e26ac3834fc3118888b3138c31c49100ffe11134ceb0142a13d5e"
         }
     },
     "installer": {
         "args": [
-            "/verysilent",
-            "/nocancel",
-            "/norestart",
-            "/dir=$dir"
+            "/VERYSILENT",
+            "/SUPPRESSMSGBOXES",
+            "/SP-",
+            "/NOCANCEL",
+            "/NORESTART",
+            "/NOICONS",
+            "/DIR=$dir"
         ]
     },
-    "post_install": "Remove-Item -Recurse \"$([Environment]::GetFolderPath('commonstartmenu'))\\Programs\\pgAdmin 4\"",
     "uninstaller": {
         "file": "unins000.exe",
         "args": [
-            "/verysilent",
-            "/nocancel",
-            "/norestart"
+            "/VERYSILENT",
+            "/SUPPRESSMSGBOXES",
+            "/SP-",
+            "/NOCANCEL",
+            "/NORESTART"
         ]
     },
     "bin": [
